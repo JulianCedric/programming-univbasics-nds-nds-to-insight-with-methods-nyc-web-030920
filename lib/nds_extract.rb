@@ -2,6 +2,8 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 require 'pp' 
 
+# 2020.03.03: JP: The directors_database NDS contains various directors, their movies, and info about those movies. In these First-Order Methods, we've created methods that 'wrap' lower-level (fundamental) methods into the ones you see below. In the next lab, we'll create "Nth-Order Methods", which are methods that wrap FIRST-Order Methods so that our code is even easier to read and communicate with other fellow coders. 
+
 def directors_totals(source)
   result = {}
   director_index = 0
@@ -24,6 +26,8 @@ def gross_for_director(d)
 
   total
 end
+
+#########################################################################################
 
 def directors_totals(nds)
 
